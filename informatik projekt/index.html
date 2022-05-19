@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Website Layout
+        </title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+             
+            /* CSS property for header section */
+            .header {
+                background-color: orange;
+                padding: 15px;
+                text-align: center;
+            }
+             
+            /* CSS property for navigation menu */
+            .nav_menu {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .nav_menu a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .nav_menu a:hover {
+                background-color: white;
+                color: orange;
+            }
+             
+            /* CSS property for content section */
+            .columnA, .columnB, .columnC {
+                float: left;
+                width: 31%;
+                padding: 15px;
+                text-align:justify;
+            }
+            h2 {
+                color:orange;
+                text-align:center;
+            }
+             
+            /* Media query to set website layout
+            according to screen size */
+            @media screen and (max-width:600px) {
+                .columnA, .columnB, .columnC {
+                    width: 50%;
+                }
+            }
+            @media screen and (max-width:400px) {
+                .columnA, .columnB, .columnC {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+     
+    <body>
+         
+        <!-- header of website layout -->
+        <div class = "header">
+            <h2 style = "color:white;font-size:200%">
+                SLOTSHAVEN NEWS 
+            </h2>
+        </div>
+         
+        <!-- navigation menu of website layout -->
+        <div class = "nav_menu">
+            <a href = "index.html">Forside</a>
+            <a href = "insend.html">Insend nyhed !</a>
+            <a href = "kontakt.html">Kontakt</a>
+        </div>
+         
+        <!-- Content section of website layout -->
+        <div class = "row">
+             
+            <div class = "columnA">
+                <h2>Slotshave fest</h2>
+                 
+ 
+<p>Jaer kom og drik en bajer når vi holder fest. for mere info så gå ind på på:
+  <a href = "https://www.lectio.dk/">lectio</a> </p>
+<br>
+<h2>Fredagsbar</h2>
+   
+<p>Der er også fredags bar snart så kom og drik en heinekennnn</p>
+<br>
+<br>
+<br>
+<img src="slotshaven.png" alt="">
+ 
+            </div>
+             
+            <div class = "columnB">
+                <h2>Svend holder hygge aften ;)</h2>
+ 
+</p>Mig svend fra 3x holder hygge aften ;))) så join </p>
+<br>
+<br>
+<h2>Jotto giver kage på onsdag</h2>
+   
+<p>Jotto jensen fra 1.X har lovet alle at give kage ud hvis man spørger, forresten er det en lagkage med brownie bund</p>
+<br>
+<br>
+<br>
+
+            </div>
+             
+            <div class = "columnC">
+                <h2>Ketchup i pølsehorn (kantinen)</h2>
+ 
+<p>Ketchup er nu en FAST del er pølsehorne så ja tak</p>
+<br>
+<br>
+  <h2>Tak til...</h2>
+   
+
+  <p>Tak til https://www.geeksforgeeks.org/css-website-layout/ for at friviligt låne os deres meget fine kodning som vi er blevet godt inspireret af :))).</p>
+  
+  <h2>Lavet af...</h2>
+  <img src="jeppe og simon.png" alt="">
+         </div>
+        </div>
+    </body>
+</html>                   
